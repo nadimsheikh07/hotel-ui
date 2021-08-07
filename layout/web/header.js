@@ -4,7 +4,7 @@ const WebHeader = () => {
     return (
         <Navbar bg="light" expand="lg">
             <Container fluid>
-                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                <Navbar.Brand href="#home">{process.env.NEXT_PUBLIC_APP_NAME}</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
