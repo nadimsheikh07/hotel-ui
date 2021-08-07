@@ -1,7 +1,13 @@
 $color-primary  : #0070f3;
 $color-secondary: #f34500;
+$color-light    : #fff;
 
 $theme-colors: ("primary": $color-primary,
   "secondary": $color-secondary,
 );
 @import "~bootstrap/scss/bootstrap";
+
+
+.bg-light {
+  background-color: $color-light;
+}
