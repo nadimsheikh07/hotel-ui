@@ -1,0 +1,7 @@
+$color-primary  : #0070f3;
+$color-secondary: #f34500;
+
+$theme-colors: ("primary": $color-primary,
+  "secondary": $color-secondary,
+);
+@import "~bootstrap/scss/bootstrap";
