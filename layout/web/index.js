@@ -1,10 +1,12 @@
+import WebFooter from "./footer"
 import WebHeader from "./header"
 
 const WebLayout = ({ children }) => {
     return (
         <div>
-            <WebHeader/>
+            <WebHeader />
             {children}
+            <WebFooter />
         </div>
     )
 }
