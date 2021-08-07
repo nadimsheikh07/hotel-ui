@@ -3,9 +3,8 @@ import { Carousel } from "react-bootstrap"
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 
 const HomeBanner = () => {
-    const height = 600
+    const height = 700
     const { width } = useWindowDimensions();
-    console.warn('width', width)
     return (
         <Carousel variant="dark">
             <Carousel.Item>
