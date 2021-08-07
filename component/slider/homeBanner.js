@@ -3,6 +3,7 @@ import { Carousel } from "react-bootstrap"
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 
 const HomeBanner = () => {
+    const height = 600
     const { width } = useWindowDimensions();
     console.warn('width', width)
     return (
@@ -12,7 +13,7 @@ const HomeBanner = () => {
                     className="d-block w-100"
                     src="/images/8D1A9232.JPG"
                     alt="First slide"
-                    height="500"
+                    height={height}
                     width={width}
 
 
@@ -27,7 +28,7 @@ const HomeBanner = () => {
                     className="d-block w-100"
                     src="/images/8D1A9233.JPG"
                     alt="Second slide"
-                    height="500"
+                    height={height}
                     width={width}
 
                 />
@@ -41,7 +42,7 @@ const HomeBanner = () => {
                     className="d-block w-100"
                     src="/images/8D1A9237.JPG"
                     alt="Third slide"
-                    height="500"
+                    height={height}
                     width={width}
 
                 />
