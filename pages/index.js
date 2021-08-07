@@ -1,14 +1,13 @@
-import WebLayout from '../layout/web'
+import withWebLayout from '../layout/web/withWebLayout'
 import styles from '../styles/Home.module.scss'
 const Home = () => {
   return (
-    <WebLayout>
-      <div className={styles.container}>
-        <h1>Home</h1>
-      </div>
-    </WebLayout>
+    <div className={styles.container}>
+      <h1>Home</h1>
+    </div>
+
   )
 
 }
 
-export default Home
+export default withWebLayout(Home)
