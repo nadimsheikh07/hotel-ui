@@ -1,0 +1,11 @@
+@import './variables.scss';
+
+.bg-dark {
+    background-color: transparent;
+    color           : $color-light;
+}
+
+.bg-light {
+    background-color: $color-light;
+    color           : $color-dark;
+}

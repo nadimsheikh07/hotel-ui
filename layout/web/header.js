@@ -1,6 +1,5 @@
 import React from "react"
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap"
-
 const WebHeader = () => {
 
     let listener = null
@@ -27,7 +26,7 @@ const WebHeader = () => {
     }, [scrollState])
 
     return (
-        <Navbar bg={scrollState == "down" ? "light" : ""} variant={scrollState == "down" ? "light" : "dark"} expand="lg" fixed="top" >
+        <Navbar bg={scrollState == "down" ? "light" : "dark"} variant={scrollState == "down" ? "light" : "dark"} expand="lg" fixed="top" >
             <Container fluid>
                 <Navbar.Brand href="#home">{process.env.NEXT_PUBLIC_APP_NAME}</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

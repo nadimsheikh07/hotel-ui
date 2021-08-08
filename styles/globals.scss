@@ -1,13 +1,13 @@
-$color-primary  : #0070f3;
-$color-secondary: #f34500;
-$color-light    : #fff;
+@import './variables.scss';
 
 $theme-colors: ("primary": $color-primary,
   "secondary": $color-secondary,
+  "danger": $color-danger,
+  "success": $color-success,
+  "warning": $color-warning,
+  "info": $color-info,
+  "light": $color-light,
+  "dark": $color-dark,
 );
 @import "~bootstrap/scss/bootstrap";
-
-
-.bg-light {
-  background-color: $color-light;
-}
+@import './Navbar.scss';

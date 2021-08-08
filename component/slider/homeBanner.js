@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Carousel } from "react-bootstrap"
+import { Button, Carousel } from "react-bootstrap"
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 
 const HomeBanner = () => {
@@ -21,6 +21,7 @@ const HomeBanner = () => {
                 <Carousel.Caption>
                     <h5>First slide label</h5>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <Button>View More</Button>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -35,6 +36,7 @@ const HomeBanner = () => {
                 <Carousel.Caption>
                     <h5>Second slide label</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <Button>View More</Button>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
