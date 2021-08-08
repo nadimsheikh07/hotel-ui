@@ -3,14 +3,15 @@ import { Carousel } from "react-bootstrap"
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 
 const HomeBanner = () => {
-    const height = 700
-    const { width } = useWindowDimensions();
+    const { height, width } = useWindowDimensions();
+    console.warn('height', height)
+    console.warn('width', width)
     return (
         <Carousel variant="dark">
             <Carousel.Item>
                 <Image
                     className="d-block w-100"
-                    src="/images/8D1A9232.JPG"
+                    src="/images/banner1.png"
                     alt="First slide"
                     height={height}
                     width={width}
@@ -25,7 +26,7 @@ const HomeBanner = () => {
             <Carousel.Item>
                 <Image
                     className="d-block w-100"
-                    src="/images/8D1A9233.JPG"
+                    src="/images/banner2.png"
                     alt="Second slide"
                     height={height}
                     width={width}
@@ -34,20 +35,6 @@ const HomeBanner = () => {
                 <Carousel.Caption>
                     <h5>Second slide label</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <Image
-                    className="d-block w-100"
-                    src="/images/8D1A9237.JPG"
-                    alt="Third slide"
-                    height={height}
-                    width={width}
-
-                />
-                <Carousel.Caption>
-                    <h5>Third slide label</h5>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

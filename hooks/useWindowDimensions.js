@@ -1,19 +1,20 @@
 import { useState, useEffect } from 'react';
 
 function getWindowDimensions() {
+  console.warn('process.browser', process.browser)
   if (process.browser) {
-    const { innerWidth: width, innerHeight: height } = window;
+    console.warn('window', window)
+    const { innerWidth, innerHeight } = window;
     return {
-      width,
-      height
+      width: innerWidth,
+      height: innerHeight
     };
   } else {
     return {
-      width: 0,
-      height: 0
+      width: 1440,
+      height: 700
     };
   }
-
 }
 
 export default function useWindowDimensions() {
