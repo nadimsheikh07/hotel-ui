@@ -26,6 +26,19 @@ body {
   color      : $color-dark;
 }
 
+.page-header {
+  padding-bottom: 5rem;
+
+
+  .container {
+    margin-top: 5rem;
+
+    h2,
+    p {
+      color: $color-light;
+    }
+  }
+}
 
 .footer {
   background-color: $color-dark;
