@@ -1,0 +1,34 @@
+@import './variables.scss';
+
+.home-banner {
+    .carousel-item:after {
+        content   : "";
+        display   : block;
+        position  : absolute;
+        top       : 0;
+        bottom    : 0;
+        left      : 0;
+        right     : 0;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    .carousel-caption {
+        text-align: center;
+        z-index   : 1;
+
+        h5 {
+            font-size: 3rem;
+            color    : $color-light;
+        }
+
+        p {
+            font-size : 2rem;
+            color     : $color-light;
+            text-align: center !important;
+        }
+        .btn{
+            font-size: 1rem;
+            padding: 1rem 2rem 1rem 2rem;
+        }
+    }
+}

@@ -27,7 +27,7 @@ const WebHeader = () => {
     }, [scrollState])
 
     return (
-        <Navbar bg={scrollState == "down" ? "light" : "dark"} variant={scrollState == "down" ? "light" : "dark"} expand="lg" fixed="top" >
+        <Navbar bg={scrollState == "top" ? "light" : "dark"} variant={scrollState == "top" ? "light" : "dark"} expand="lg" fixed="top" >
             <Container fluid>
                 <Navbar.Brand href="#home">{process.env.NEXT_PUBLIC_APP_NAME}</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
