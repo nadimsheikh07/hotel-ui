@@ -20,7 +20,7 @@ const HomeBanner = () => {
 
                     />
                     <Carousel.Caption>
-                        <h5>First slide label</h5>
+                        <h5>Enjoy a Luxury Experience</h5>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                         <Button>View More</Button>
                     </Carousel.Caption>
@@ -35,7 +35,7 @@ const HomeBanner = () => {
 
                     />
                     <Carousel.Caption>
-                        <h5>Second slide label</h5>
+                        <h5>Food & Drinks</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <Button>View More</Button>
                     </Carousel.Caption>

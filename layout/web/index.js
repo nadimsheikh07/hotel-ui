@@ -3,11 +3,11 @@ import WebHeader from "./header"
 
 const WebLayout = ({ children }) => {
     return (
-        <div>
+        <section>
             <WebHeader />
             {children}
             <WebFooter />
-        </div>
+        </section>
     )
 }
 
