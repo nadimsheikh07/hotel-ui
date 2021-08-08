@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "next/link";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap"
 const WebHeader = () => {
 
@@ -33,12 +34,24 @@ const WebHeader = () => {
 
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav className="ml-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Rooms</Nav.Link>
-                        <Nav.Link href="#link">Services</Nav.Link>
-                        <Nav.Link href="#link">About</Nav.Link>
-                        <Nav.Link href="#link">Blog</Nav.Link>
-                        <Nav.Link href="#link">Contact</Nav.Link>
+                        <Link href="/" passHref>
+                            <Nav.Link >Home</Nav.Link>
+                        </Link>
+                        <Link href="/rooms" passHref>
+                            <Nav.Link>Rooms</Nav.Link>
+                        </Link>
+                        <Link href="/services" passHref>
+                            <Nav.Link>Services</Nav.Link>
+                        </Link>
+                        <Link href="/about" passHref>
+                            <Nav.Link>About</Nav.Link>
+                        </Link>
+                        <Link href="/blogs" passHref>
+                            <Nav.Link>Blogs</Nav.Link>
+                        </Link>
+                        <Link href="/contact" passHref>
+                            <Nav.Link>Contact</Nav.Link>
+                        </Link>
                         <NavDropdown title="Account" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#logout">Register</NavDropdown.Item>
                             <NavDropdown.Item href="#logout">Login</NavDropdown.Item>
