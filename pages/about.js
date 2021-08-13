@@ -1,16 +1,12 @@
-import { Container } from 'react-bootstrap'
+import { AboutDetails } from '../component/modules/about/aboutDetails'
 import PageHeader from '../component/modules/pageHeader'
 import { HomeParallax } from '../component/modules/parallax'
 import withWebLayout from '../layout/web/withWebLayout'
 const About = () => {
   return (
     <section>
-      <PageHeader title="About Us" />
-      <Container>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid. Atque dolore esse veritatis iusto eaque perferendis non dolorem fugiat voluptatibus vitae error ad itaque inventore accusantium tempore dolores sunt.
-        </p>
-      </Container>
+      <PageHeader title="About Us" />      
+      <AboutDetails />
       <HomeParallax />
     </section>
   )

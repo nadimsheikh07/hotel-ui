@@ -1,11 +1,12 @@
 import { Container } from "react-bootstrap"
 import { Parallax } from 'react-parallax';
-const PageHeader = ({ title }) => {
+import styles from "../../../styles/header/Breadcrumb.module.scss"
+const PageHeader = ({ title, subtitle }) => {
     return (
-        <Parallax className="page-header" blur={1} bgImage="/images/banner1.png" bgImageAlt={title} strength={10}>
-            <Container>
+        <Parallax className={styles.section} blur={1} bgImage="/images/banner1.png" bgImageAlt={title} strength={10}>
+            <Container className={styles.container}>
                 <h2>{title}</h2>
-                <p>subtitle</p>
+                <p>{subtitle}</p>
             </Container>
         </Parallax>
     )
