@@ -1,9 +1,10 @@
+import { PageHeader } from '../component/modules/header'
 import withWebLayout from '../layout/web/withWebLayout'
 const Blogs = () => {
   return (
-    <div>
-      <h1>Blogs</h1>      
-    </div>
+    <section>
+      <PageHeader title="Blogs" />
+    </section>
 
   )
 

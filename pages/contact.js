@@ -1,9 +1,10 @@
+import { PageHeader } from '../component/modules/header'
 import withWebLayout from '../layout/web/withWebLayout'
 const Contact = () => {
   return (
-    <div>
-      <h1>Contact</h1>      
-    </div>
+    <section>
+      <PageHeader title="Contact us" />
+    </section>
 
   )
 
