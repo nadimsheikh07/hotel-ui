@@ -1,5 +1,6 @@
-import { Col, Container, ListGroup, Row } from "react-bootstrap"
-import { BlogList } from "../../component/modules/blogs/blogList"
+import { Col, Container, Row } from "react-bootstrap"
+import { BlogList } from "../../component/modules/blogs"
+import { ContactList } from "../../component/modules/contact"
 const WebFooter = () => {
     return (
         <section className="footer">
@@ -22,12 +23,7 @@ const WebFooter = () => {
                         <h6>
                             Contact Info
                         </h6>
-                        <ListGroup>
-                            <ListGroup.Item>203 Fake St. Mountain View, San Francisco, California, USA</ListGroup.Item>
-                            <ListGroup.Item>+91 19188778763274</ListGroup.Item>
-                            <ListGroup.Item>info@yourdomain.com</ListGroup.Item>
-                            <ListGroup.Item>Monday — Friday 8:00am - 5:00pm</ListGroup.Item>
-                        </ListGroup>
+                        <ContactList />
                     </Col>
                 </Row>
                 <Row>

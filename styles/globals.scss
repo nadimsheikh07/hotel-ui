@@ -40,24 +40,9 @@ body {
   }
 }
 
-
-.blogList {
-  h5 {
-    font-size: 1rem;
-  }
-}
-
 .footer {
   background-color: $color-dark;
   color           : $color-light;
   padding-top     : 2rem;
-  padding-bottom  : 2rem;
-
-  .list-group {
-    .list-group-item {
-      background-color: transparent;
-      color           : $color-light;
-      padding         : 0.5rem 0rem;
-    }
-  }
+  padding-bottom  : 2rem;  
 }

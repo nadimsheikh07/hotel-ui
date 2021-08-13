@@ -1,0 +1,10 @@
+@import '../../variables.scss';
+
+.group {
+    .item {
+        background-color: transparent;
+        color           : $color-light;
+        padding         : 0.7rem 0rem;
+        border-color    : none;
+    }
+}
