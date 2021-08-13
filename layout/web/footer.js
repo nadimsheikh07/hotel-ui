@@ -1,5 +1,5 @@
 import { Col, Container, ListGroup, Row } from "react-bootstrap"
-
+import { BlogList } from "../../component/modules/blogs/blogList"
 const WebFooter = () => {
     return (
         <section className="footer">
@@ -15,6 +15,8 @@ const WebFooter = () => {
                         <h6>
                             Blogs
                         </h6>
+
+                        <BlogList />
                     </Col>
                     <Col>
                         <h6>
