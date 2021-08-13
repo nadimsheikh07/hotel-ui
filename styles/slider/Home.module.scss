@@ -1,7 +1,7 @@
-@import './variables.scss';
+@import '../variables.scss';
 
-.home-banner {
-    .carousel-item:after {
+.homebanner {
+    .carouselitem:after {
         content   : "";
         display   : block;
         position  : absolute;
@@ -12,9 +12,11 @@
         background: rgba(0, 0, 0, 0.4);
     }
 
-    .carousel-caption {
-        text-align: center;
-        z-index   : 1;
+    .carouselcaption {
+        text-align : center;
+        z-index    : 1;
+        padding-top: 0;
+        bottom     : 15rem;
 
         h5 {
             font-size: 3rem;
@@ -26,9 +28,11 @@
             color     : $color-light;
             text-align: center !important;
         }
-        .btn{
+
+        .btn {
             font-size: 1rem;
-            padding: 1rem 2rem 1rem 2rem;
+            padding  : 1rem 2rem 1rem 2rem;
+            margin-left: 1rem;
         }
     }
 }

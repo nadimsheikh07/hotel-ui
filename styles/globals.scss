@@ -12,10 +12,6 @@ $theme-colors: ("primary": $color-primary,
 );
 @import "~bootstrap/scss/bootstrap";
 @import './Navbar.scss';
-@import './HomeBanner.scss';
-@import './modules/shortServices.scss';
-
-
 
 html,
 body {

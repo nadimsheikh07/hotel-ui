@@ -1,6 +1,6 @@
 import { Container } from 'react-bootstrap'
 import PageHeader from '../component/modules/pageHeader'
-import HomeParallax from '../component/modules/parallax/homeParallax'
+import { HomeParallax } from '../component/modules/parallax'
 import withWebLayout from '../layout/web/withWebLayout'
 const About = () => {
   return (

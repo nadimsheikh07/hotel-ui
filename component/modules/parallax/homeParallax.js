@@ -2,7 +2,7 @@
 import { Button, Col, Container, Row } from "react-bootstrap"
 import { Parallax } from 'react-parallax';
 import styles from '../../../styles/modules/parallax/Home.module.scss';
-const HomeParallax = () => {
+export const HomeParallax = () => {
     return (
         <Parallax className={styles.homeparallax} blur={1} bgImage="/images/banner1.png" bgImageAlt="the cat" strength={100}>
             <Container>
@@ -19,5 +19,3 @@ const HomeParallax = () => {
         </Parallax>
     )
 }
-
-export default HomeParallax

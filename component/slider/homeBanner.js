@@ -1,31 +1,28 @@
 import Image from 'next/image'
 import { Button, Carousel } from "react-bootstrap"
 import useWindowDimensions from '../../hooks/useWindowDimensions';
-
-const HomeBanner = () => {
+import styles from '../../styles/slider/Home.module.scss';
+export const HomeBanner = () => {
     const { height, width } = useWindowDimensions();
-    console.warn('height', height)
-    console.warn('width', width)
     return (
-        <section className="home-banner">
+        <section className={styles.homebanner}>
             <Carousel variant="light" fade>
-                <Carousel.Item>
+                <Carousel.Item className={styles.carouselitem}>
                     <Image
                         className="d-block w-100"
                         src="/images/banner1.png"
                         alt="First slide"
                         height={height}
                         width={width}
-
-
                     />
-                    <Carousel.Caption>
+                    <Carousel.Caption className={styles.carouselcaption}>
                         <h5>Enjoy a Luxury Experience</h5>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        <Button>View More</Button>
+                        <Button variant="primary" className={styles.btn}>Take Tour</Button>
+                        <Button variant="light" className={styles.btn}>View More</Button>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item className={styles.carouselitem}>
                     <Image
                         className="d-block w-100"
                         src="/images/banner2.png"
@@ -34,15 +31,14 @@ const HomeBanner = () => {
                         width={width}
 
                     />
-                    <Carousel.Caption>
+                    <Carousel.Caption className={styles.carouselcaption}>
                         <h5>Food & Drinks</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <Button>View More</Button>
+                        <Button variant="primary" className={styles.btn}>Take Tour</Button>
+                        <Button variant="light" className={styles.btn}>View More</Button>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
         </section>
     )
 }
-
-export default HomeBanner
