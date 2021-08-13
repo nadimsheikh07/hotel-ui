@@ -6,20 +6,20 @@ const WebFooter = () => {
         <section className="footer">
             <Container>
                 <Row>
-                    <Col>
+                    <Col md={4}>
                         <h6>
                             About Us
                         </h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid. Atque dolore esse veritatis iusto eaque perferendis non dolorem fugiat voluptatibus vitae error ad itaque inventore accusantium tempore dolores sunt.</p>
                     </Col>
-                    <Col>
+                    <Col md={4}>
                         <h6>
                             Blogs
                         </h6>
 
                         <BlogList />
                     </Col>
-                    <Col>
+                    <Col md={4}>
                         <h6>
                             Contact Info
                         </h6>

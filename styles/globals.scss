@@ -14,7 +14,6 @@ $theme-colors: ("primary": $color-primary,
 @import './Navbar.scss';
 @import './HomeBanner.scss';
 @import './modules/shortServices.scss';
-@import './modules/homeParallax.scss';
 
 
 
@@ -44,5 +43,5 @@ body {
   background-color: $color-dark;
   color           : $color-light;
   padding-top     : 2rem;
-  padding-bottom  : 2rem;  
+  padding-bottom  : 2rem;
 }

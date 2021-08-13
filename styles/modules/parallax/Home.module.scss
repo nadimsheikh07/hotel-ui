@@ -1,8 +1,10 @@
-.home-parallax {
+@import '../../variables.scss';
+
+.homeparallax {
     margin-top: 2rem;
     padding   : 5rem 0rem 5rem 0rem;
 
-    h2 {
+    .title {
         font-size     : 3rem;
         margin-top    : 2rem;
         margin-bottom : 2rem;
@@ -22,7 +24,7 @@
         }
     }
 
-    p {        
+    .text {
         margin-bottom: 1rem;
     }
 
