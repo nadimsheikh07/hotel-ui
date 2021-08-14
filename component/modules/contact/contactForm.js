@@ -3,7 +3,7 @@ import { Button, Form } from 'react-bootstrap'
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { Textbox } from '../../formik/textbox';
-
+import styles from '../../../styles/modules/contact/ContactForm.module.scss'
 
 const ValidationSchema = Yup.object().shape({
     name: Yup.string()
@@ -12,11 +12,11 @@ const ValidationSchema = Yup.object().shape({
         .required('Required'),
     email: Yup.string().email('Invalid email').required('Required'),
     subject: Yup.string()
-        .min(2, 'Too Short!')
+        .min(10, 'Too Short!')
         .max(50, 'Too Long!')
         .required('Required'),
     message: Yup.string()
-        .min(2, 'Too Short!')
+        .min(10, 'Too Short!')
         .max(100, 'Too Long!')
         .required('Required'),
 });
@@ -37,7 +37,7 @@ export const ContactForm = () => {
     });
 
     return (
-        <div>
+        <div className={styles.container}>
             <Form onSubmit={formik.handleSubmit} >
 
                 <Textbox name="name" label="Name" value={formik.values.name} handleChange={formik.handleChange} error={formik.touched.name && formik.errors.name} />
@@ -45,7 +45,7 @@ export const ContactForm = () => {
                 <Textbox name="subject" label="Subject" value={formik.values.subject} handleChange={formik.handleChange} error={formik.touched.subject && formik.errors.subject} />
                 <Textbox name="message" label="Message" value={formik.values.message} handleChange={formik.handleChange} error={formik.touched.message && formik.errors.message} as="textarea" rows={3} />
 
-                <Button variant="primary" type="submit">
+                <Button className={styles.btn} variant="primary" type="submit">
                     Send Message
                 </Button>
             </Form>
