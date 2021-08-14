@@ -1,8 +1,8 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
-
+import styles from '../../../styles/modules/contact/ContactInfo.module.scss';
 export const ContactInfo = () => (
-  <div>
+  <div className={styles.section}>
     <h1>Contact us</h1>
     <p>We are open for any suggestion or just to have a chat</p>
     <Row>
