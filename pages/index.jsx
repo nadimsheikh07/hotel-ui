@@ -2,6 +2,7 @@ import React from 'react';
 import { AboutDetails, AboutText } from '../component/modules/about';
 import { HomeParallax } from '../component/modules/parallax';
 import { ShortServices } from '../component/modules/services';
+import { ClientTestimonial } from '../component/modules/testimonial/client';
 import { HomeBanner } from '../component/slider';
 import withWebLayout from '../layout/web/withWebLayout';
 
@@ -16,6 +17,8 @@ const Home = () => (
     ]} />
     <ShortServices />
     <HomeParallax />
+
+    <ClientTestimonial />
   </section>
 );
 

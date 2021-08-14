@@ -12,6 +12,11 @@ $theme-colors: ("primary": $color-primary,
 );
 @import "~bootstrap/scss/bootstrap";
 
+@import "~swiper/swiper.scss";
+@import "~swiper/components/navigation/navigation.scss";
+@import "~swiper/components/pagination/pagination.scss";
+@import "~swiper/components/scrollbar/scrollbar.scss";
+
 html,
 body {
   padding    : 0;
