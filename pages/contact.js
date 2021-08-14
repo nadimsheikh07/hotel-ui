@@ -1,5 +1,5 @@
 import { Col, Container, Row } from 'react-bootstrap'
-import { ContactForm, ContactInfo } from '../component/modules/contact'
+import { ContactForm, ContactInfo, ContactMap } from '../component/modules/contact'
 import { PageHeader } from '../component/modules/header'
 import withWebLayout from '../layout/web/withWebLayout'
 import styles from "../styles/pages/Contact.module.scss"
@@ -14,7 +14,7 @@ const Contact = () => {
             <ContactForm />
           </Col>
           <Col md={6}>
-
+            <ContactMap />
           </Col>
         </Row>
       </Container>
