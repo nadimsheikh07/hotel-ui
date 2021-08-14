@@ -1,21 +1,4 @@
 @import '../../variables.scss';
-
-.markerbtn {
-    background-color: transparent;
-    border          : none;
-
-    &:hover {
-        background-color: transparent;
-        border          : none;
-    }
-
-    &:visited {
-        background-color: transparent;
-        border          : none;
-    }
-
-}
-
 .marker {
     color : $color-primary;
     cursor: pointer
