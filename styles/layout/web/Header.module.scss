@@ -1,0 +1,53 @@
+@import '../../variables.scss';
+
+.navbarlight {
+    padding-top     : 1rem;
+    padding-bottom  : 1rem;
+    background-color: transparent !important;
+
+    .navlink {
+        color: $color-light !important;
+    }
+
+    .navbarbrand {
+        color: $color-light !important;
+    }
+
+    .dropdowntoggle {
+        color: $color-light !important;
+
+        a {
+            color: $color-light !important;
+        }
+
+        .dropdownitem {
+            color: $color-dark !important;
+        }
+    }
+}
+
+.navbardark {
+    padding-top     : 1rem;
+    padding-bottom  : 1rem;
+    background-color: $color-dark !important;
+
+    .navlink {
+        color: $color-light !important;
+    }
+
+    .navbarbrand {
+        color: $color-light !important;
+    }
+
+    .dropdowntoggle {
+        color: $color-light !important;
+
+        a {
+            color: $color-light !important;
+        }
+
+        .dropdownitem {
+            color: $color-dark !important;
+        }
+    }
+}
