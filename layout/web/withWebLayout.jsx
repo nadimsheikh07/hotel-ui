@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import WebLayout from './index';
 
 const withWebLayout = (Component) => {
