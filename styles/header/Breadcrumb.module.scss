@@ -18,10 +18,23 @@
         margin-top: 10rem;
         z-index   : 1;
         position  : relative;
+        text-align: center;
 
-        h2,
-        p {
-            color: $color-light;
+        h2 {
+            color   : $color-primary;
+            padding-bottom: 1rem;
+            display : inline-block;
+            position: relative;
+
+            &:before {
+                content      : "";
+                position     : absolute;
+                width        : 50%;
+                height       : 1px;
+                bottom       : 0;
+                left         : 0;
+                border-bottom: 2px solid $color-primary;
+            }
         }
     }
 }
