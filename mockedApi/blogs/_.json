@@ -1,0 +1,10 @@
+[
+    "#for i in range(20)",
+    {
+        "id": "n:[i]",
+        "title": "Post n: #[i]",
+        "image": "/images/banner1.png",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid. Atque dolore esse veritatis iusto eaque"
+    },
+    "#endfor"
+]
