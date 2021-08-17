@@ -5,7 +5,6 @@ import withWebLayout from '../layout/web/withWebLayout';
 import { connect } from "react-redux";
 import { Button } from 'react-bootstrap';
 const Blogs = (props) => {
-  console.log('props', props)
   const { value } = props
 
   const counter = (type) => {
@@ -16,9 +15,6 @@ const Blogs = (props) => {
     }
   }
 
-  React.useEffect(() => {
-    counter()
-  }, [])
   return (
     <section>
       <PageHeader title="Blogs" />
