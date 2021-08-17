@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 import { Button } from 'react-bootstrap';
 const Blogs = (props) => {
   console.log('props', props)
-  const { value } = props.counter
+  const { value } = props
 
   const counter = (type) => {
     if (type) {
@@ -30,4 +30,4 @@ const Blogs = (props) => {
   )
 }
 
-export default connect((state) => state)(withWebLayout(Blogs));
+export default connect((state) => state.counter)(withWebLayout(Blogs));
