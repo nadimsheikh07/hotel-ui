@@ -4,6 +4,7 @@ import { PageHeader } from '../component/modules/header';
 import withWebLayout from '../layout/web/withWebLayout';
 import { Button } from 'react-bootstrap';
 import { useSelector, useDispatch } from 'react-redux'
+import { decrementCounter, incrementCounter } from '../redux/actions/counterActions';
 
 const Blogs = () => {
   const value = useSelector(state => state.counter.value)
@@ -11,9 +12,9 @@ const Blogs = () => {
 
   const counter = (type) => {
     if (type) {
-      dispatch({ type: "INCREMENT_COUNTER" });
+      dispatch(incrementCounter());
     } else {
-      dispatch({ type: "DECREMENT_COUNTER" });
+      dispatch(decrementCounter());
     }
   }
 
