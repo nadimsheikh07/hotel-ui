@@ -4,6 +4,7 @@ import rootReducer from './reducers/rootReducer';
 import logger from 'redux-logger';
 import thunkMiddleware from "redux-thunk";
 
+
 const bindMiddleware = (middleware) => {
     if (process.env.NODE_ENV !== "production") {
         const { composeWithDevTools } = require("redux-devtools-extension");
@@ -23,7 +24,7 @@ const makeStore = ({ isServer }) => {
 
         const persistConfig = {
             key: "nextjs",
-            whitelist: ["auth", "cart", "counter"], // only counter will be persisted, add other reducers if needed
+            whitelist: ["blogs", "counter"], // only counter will be persisted, add other reducers if needed
             storage, // if needed, use a safer storage
         };
 
@@ -37,6 +38,7 @@ const makeStore = ({ isServer }) => {
 
         store.__persistor = persistStore(store); // This creates a persistor object & push that persisted object to .__persistor, so that we can avail the persistability feature
 
+    
         return store;
     }
 };

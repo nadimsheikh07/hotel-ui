@@ -4,6 +4,7 @@ import '../styles/globals.scss';
 import { wrapper } from '../redux/store';
 import { useStore } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
+import withReduxSaga from 'next-redux-saga'
 
 const MyApp = ({ Component, pageProps }) => {
   const Layout = Component.Layout ? Component.Layout : React.Fragment;
@@ -19,4 +20,4 @@ const MyApp = ({ Component, pageProps }) => {
   );
 };
 
-export default wrapper.withRedux(MyApp);
+export default wrapper.withRedux(withReduxSaga(MyApp));

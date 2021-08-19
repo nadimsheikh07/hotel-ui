@@ -2,16 +2,18 @@
 import React from 'react';
 import { PageHeader } from '../component/modules/header';
 import withWebLayout from '../layout/web/withWebLayout';
-import { connect } from "react-redux";
 import { Button } from 'react-bootstrap';
-const Blogs = (props) => {
-  const { value } = props
+import { useSelector, useDispatch } from 'react-redux'
+
+const Blogs = () => {
+  const value = useSelector(state => state.counter.value)
+  const dispatch = useDispatch()
 
   const counter = (type) => {
     if (type) {
-      props.dispatch({ type: "INCREMENT_COUNTER" });
+      dispatch({ type: "INCREMENT_COUNTER" });
     } else {
-      props.dispatch({ type: "DECREMENT_COUNTER" });
+      dispatch({ type: "DECREMENT_COUNTER" });
     }
   }
 
@@ -26,4 +28,4 @@ const Blogs = (props) => {
   )
 }
 
-export default connect((state) => state.counter)(withWebLayout(Blogs));
+export default withWebLayout(Blogs);

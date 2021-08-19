@@ -1,6 +1,10 @@
 import { DECREMENT_COUNTER, INCREMENT_COUNTER } from '../actions/counterActions';
 
-const counterReducer = (state = { value: 0 }, action) => {
+const initialState = {
+    value: 0
+}
+
+const counterReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'persist/REHYDRATE': {
             const data = action.payload;
