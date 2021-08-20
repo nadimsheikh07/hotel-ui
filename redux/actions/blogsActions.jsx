@@ -1,3 +1,5 @@
+import { apiConfig } from "../../utils/apiConfig";
+
 //Action Types
 export const REQUEST_BLOGS = "REQUEST_BLOGS";
 export const SUCCESS_BLOGS = "SUCCESS_BLOGS";
@@ -5,21 +7,23 @@ export const FAILURE_BLOGS = "FAILURE_BLOGS";
 
 
 //Action Creator
-export const requestBlogs = () => {
-    console.log('REQUEST_BLOGS-----')
-    return {
-        type: REQUEST_BLOGS
-    }
+export const requestBlogs = () => dispatch => {
+    dispatch({ type: REQUEST_BLOGS })
+    apiConfig.get('/blogs').then(response => {
+        if (response.status == 200) {
+            dispatch({
+                type: SUCCESS_BLOGS,
+                payload: response.data
+            })
+        }
+    }).catch((error) => {
+        console.log('error', error)
+        const { response } = error
+        dispatch({
+            type: SUCCESS_BLOGS,
+            payload: response.data
+        })
+    })
 };
-
-export const failureBlogs = (data) => ({
-    type: FAILURE_BLOGS,
-    data
-});
-
-export const successBlogs = (data) => ({
-    type: SUCCESS_BLOGS,
-    data
-});
 
 

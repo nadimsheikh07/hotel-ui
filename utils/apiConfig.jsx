@@ -14,4 +14,4 @@ instance.interceptors.response.use(function (response) {
     return Promise.reject(error);
 })
 
-export const axiosConfig = instance
+export const apiConfig = instance

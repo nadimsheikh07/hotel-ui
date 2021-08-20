@@ -3,7 +3,7 @@ import { createWrapper } from 'next-redux-wrapper'
 import rootReducer from './reducers/rootReducer';
 import logger from 'redux-logger';
 import thunkMiddleware from "redux-thunk";
-
+import createSagaMiddleware from 'redux-saga';
 
 const bindMiddleware = (middleware) => {
     if (process.env.NODE_ENV !== "production") {
@@ -38,7 +38,6 @@ const makeStore = ({ isServer }) => {
 
         store.__persistor = persistStore(store); // This creates a persistor object & push that persisted object to .__persistor, so that we can avail the persistability feature
 
-    
         return store;
     }
 };
