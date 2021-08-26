@@ -8,7 +8,7 @@ import withReduxSaga from 'next-redux-saga'
 
 const MyApp = ({ Component, pageProps }) => {
   const Layout = Component.Layout ? Component.Layout : React.Fragment;
-  const store = useStore((state) => state)
+  const store = useStore((state) => state)  
 
   return (
     <Layout>

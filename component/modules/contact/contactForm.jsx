@@ -30,7 +30,7 @@ export const ContactForm = () => {
       message: '',
     },
     validationSchema: ValidationSchema,
-    onSubmit: (values) => {
+    onSubmit: (values) => {      
       console.log(values);
     },
   });
