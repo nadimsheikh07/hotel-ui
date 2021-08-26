@@ -25,7 +25,7 @@ const Blogs = () => {
     if (!blogs) {
       dispatch(requestBlogs());
     }
-  }, [blogs])
+  }, [blogs, dispatch])
 
   return (
     <section>
